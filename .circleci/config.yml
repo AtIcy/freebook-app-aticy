@@ -1,5 +1,5 @@
 version: 2.1
-ords:
+orbs:
   ruby: circleci/ruby@1.1.2
 
 jobs:
@@ -41,7 +41,7 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - build:
+      - build
       - test:
           requires:
             - build
