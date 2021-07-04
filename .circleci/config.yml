@@ -1,5 +1,5 @@
 version: 2.1
-ords:
+orbs:
   ruby: circleci/ruby@1.1.2
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
     working_directory: ~/freebook-app-aticy/src
     steps:
       - checkout:
-          path: ~/freebook_app
+          path: ~/freebook-app-aticy
       - ruby/install-deps
       - run:
           name: Database setup
