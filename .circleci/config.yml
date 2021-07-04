@@ -28,7 +28,7 @@ jobs:
     working_directory: ~/freebook-app-aticy/src
     steps:
       - checkout:
-          path: ~/freebook_app
+          path: ~/freebook-app-aticy
       - ruby/install-deps
       - run:
           name: Database setup
